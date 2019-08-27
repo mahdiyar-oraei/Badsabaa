@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		07C20AFA231529340092E0D1 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07C20AF8231529340092E0D1 /* Localized.strings */; };
 		07C20AFF231529E40092E0D1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20AFE231529E40092E0D1 /* StringExtension.swift */; };
 		07C20B0223152BE40092E0D1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B0123152BE40092E0D1 /* Strings.swift */; };
+		07C20B09231538980092E0D1 /* HomeInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B08231538980092E0D1 /* HomeInteractorTest.swift */; };
+		07C20B0C231539260092E0D1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B0B231539260092E0D1 /* HomeInteractor.swift */; };
+		07C20B0F23153AA50092E0D1 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B0E23153AA50092E0D1 /* HomeProtocols.swift */; };
 		649C6913329B422EC7E0A30B /* Pods_Badesaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */; };
 		B20E68091A81F125ED3DE736 /* Pods_BadesabaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,9 @@
 		07C20AFB231529390092E0D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
 		07C20AFE231529E40092E0D1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		07C20B0123152BE40092E0D1 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		07C20B08231538980092E0D1 /* HomeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTest.swift; sourceTree = "<group>"; };
+		07C20B0B231539260092E0D1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		07C20B0E23153AA50092E0D1 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BadesabaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Badesaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDADD04D72EE5DFDEDFF058 /* Pods-BadesabaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadesabaTests.release.xcconfig"; path = "Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 		07C20AD3231523A40092E0D1 /* Badesaba */ = {
 			isa = PBXGroup;
 			children = (
+				07C20B102315417E0092E0D1 /* Entities */,
+				07C20B032315382B0092E0D1 /* Modules */,
 				07C20AFC231529B90092E0D1 /* Utils */,
 				07C20AF42315242C0092E0D1 /* Resources */,
 				07C20AD4231523A40092E0D1 /* AppDelegate.swift */,
@@ -101,6 +109,7 @@
 		07C20AE8231523A70092E0D1 /* BadesabaTests */ = {
 			isa = PBXGroup;
 			children = (
+				07C20B05231538740092E0D1 /* Modules */,
 				07C20AEB231523A70092E0D1 /* Info.plist */,
 			);
 			path = BadesabaTests;
@@ -134,6 +143,70 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		07C20B032315382B0092E0D1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				07C20B04231538670092E0D1 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		07C20B04231538670092E0D1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07C20B0D23153A940092E0D1 /* Protocol */,
+				07C20B0A231539160092E0D1 /* Interactor */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		07C20B05231538740092E0D1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				07C20B062315387B0092E0D1 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		07C20B062315387B0092E0D1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07C20B07231538810092E0D1 /* Interactor */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		07C20B07231538810092E0D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				07C20B08231538980092E0D1 /* HomeInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		07C20B0A231539160092E0D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				07C20B0B231539260092E0D1 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		07C20B0D23153A940092E0D1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				07C20B0E23153AA50092E0D1 /* HomeProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		07C20B102315417E0092E0D1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		68043799F675704D238AD30C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +215,6 @@
 				D82959651B295803B6297969 /* Pods-BadesabaTests.debug.xcconfig */,
 				7DDADD04D72EE5DFDEDFF058 /* Pods-BadesabaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,6 +284,7 @@
 					};
 					07C20AE4231523A60092E0D1 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 						TestTargetID = 07C20AD0231523A40092E0D1;
 					};
 				};
@@ -343,8 +416,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C20AFF231529E40092E0D1 /* StringExtension.swift in Sources */,
+				07C20B0F23153AA50092E0D1 /* HomeProtocols.swift in Sources */,
 				07C20B0223152BE40092E0D1 /* Strings.swift in Sources */,
 				07C20AD5231523A40092E0D1 /* AppDelegate.swift in Sources */,
+				07C20B0C231539260092E0D1 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C20B09231538980092E0D1 /* HomeInteractorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +625,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BadesabaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -558,6 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiliha.BadesabaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Badesaba.app/Badesaba";
@@ -570,6 +648,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BadesabaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
