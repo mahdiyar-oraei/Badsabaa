@@ -1,0 +1,6 @@
+framework module Pods_BadesabaTests {
+  umbrella header "Pods-BadesabaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,6 +13,8 @@
 		07C20AFA231529340092E0D1 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07C20AF8231529340092E0D1 /* Localized.strings */; };
 		07C20AFF231529E40092E0D1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20AFE231529E40092E0D1 /* StringExtension.swift */; };
 		07C20B0223152BE40092E0D1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B0123152BE40092E0D1 /* Strings.swift */; };
+		649C6913329B422EC7E0A30B /* Pods_Badesaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */; };
+		B20E68091A81F125ED3DE736 /* Pods_BadesabaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,12 @@
 		07C20AFB231529390092E0D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
 		07C20AFE231529E40092E0D1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		07C20B0123152BE40092E0D1 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BadesabaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Badesaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DDADD04D72EE5DFDEDFF058 /* Pods-BadesabaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadesabaTests.release.xcconfig"; path = "Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0F8706DE2197191F61B4776 /* Pods-Badesaba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badesaba.release.xcconfig"; path = "Target Support Files/Pods-Badesaba/Pods-Badesaba.release.xcconfig"; sourceTree = "<group>"; };
+		D82959651B295803B6297969 /* Pods-BadesabaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadesabaTests.debug.xcconfig"; path = "Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F910117CA1FAF9EBB8BF53F4 /* Pods-Badesaba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badesaba.debug.xcconfig"; path = "Target Support Files/Pods-Badesaba/Pods-Badesaba.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649C6913329B422EC7E0A30B /* Pods_Badesaba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20E68091A81F125ED3DE736 /* Pods_BadesabaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				07C20AD3231523A40092E0D1 /* Badesaba */,
 				07C20AE8231523A70092E0D1 /* BadesabaTests */,
 				07C20AD2231523A40092E0D1 /* Products */,
+				68043799F675704D238AD30C /* Pods */,
+				A62E85A34824953AA4BD893C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +134,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		68043799F675704D238AD30C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F910117CA1FAF9EBB8BF53F4 /* Pods-Badesaba.debug.xcconfig */,
+				C0F8706DE2197191F61B4776 /* Pods-Badesaba.release.xcconfig */,
+				D82959651B295803B6297969 /* Pods-BadesabaTests.debug.xcconfig */,
+				7DDADD04D72EE5DFDEDFF058 /* Pods-BadesabaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A62E85A34824953AA4BD893C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */,
+				48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07C20AEE231523A70092E0D1 /* Build configuration list for PBXNativeTarget "Badesaba" */;
 			buildPhases = (
+				D28FAFF7262F3F4832C799C7 /* [CP] Check Pods Manifest.lock */,
 				07C20ACD231523A40092E0D1 /* Sources */,
 				07C20ACE231523A40092E0D1 /* Frameworks */,
 				07C20ACF231523A40092E0D1 /* Resources */,
+				F56F804CADA9F51D07896FA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07C20AF1231523A70092E0D1 /* Build configuration list for PBXNativeTarget "BadesabaTests" */;
 			buildPhases = (
+				45B0E46E8BE2EAA8E79EE54E /* [CP] Check Pods Manifest.lock */,
 				07C20AE1231523A60092E0D1 /* Sources */,
 				07C20AE2231523A60092E0D1 /* Frameworks */,
 				07C20AE3231523A60092E0D1 /* Resources */,
+				6BFAC63463508B0CCE41194D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +255,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B0E46E8BE2EAA8E79EE54E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BadesabaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BFAC63463508B0CCE41194D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28FAFF7262F3F4832C799C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Badesaba-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56F804CADA9F51D07896FA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Badesaba/Pods-Badesaba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Badesaba/Pods-Badesaba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Badesaba/Pods-Badesaba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07C20ACD231523A40092E0D1 /* Sources */ = {
@@ -389,10 +507,12 @@
 		};
 		07C20AEF231523A70092E0D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F910117CA1FAF9EBB8BF53F4 /* Pods-Badesaba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Badesaba/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,10 +526,12 @@
 		};
 		07C20AF0231523A70092E0D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F8706DE2197191F61B4776 /* Pods-Badesaba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Badesaba/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,6 +545,7 @@
 		};
 		07C20AF2231523A70092E0D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D82959651B295803B6297969 /* Pods-BadesabaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -443,6 +566,7 @@
 		};
 		07C20AF3231523A70092E0D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDADD04D72EE5DFDEDFF058 /* Pods-BadesabaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

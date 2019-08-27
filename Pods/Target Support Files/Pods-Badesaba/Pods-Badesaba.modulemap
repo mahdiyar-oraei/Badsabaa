@@ -1,0 +1,6 @@
+framework module Pods_Badesaba {
+  umbrella header "Pods-Badesaba-umbrella.h"
+
+  export *
+  module * { export * }
+}
