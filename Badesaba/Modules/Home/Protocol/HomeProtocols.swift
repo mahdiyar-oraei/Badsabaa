@@ -7,6 +7,6 @@
 //
 
 protocol LoadMonthUseCase: class {
-    func loadMonths(_ monthOffsets: Int...)
+    func loadMonths(_ monthOffsets: [Int])
     func loadMonth(_ monthOffset: Int)
 }
