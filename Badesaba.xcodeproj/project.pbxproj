@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A196E6231A369100DF00CA /* PrayerTimesUserSettingRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196E5231A369100DF00CA /* PrayerTimesUserSettingRepositoryTest.swift */; };
+		07A196E9231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196E8231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift */; };
+		07A196EC231A380600DF00CA /* UserSettingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196EB231A380600DF00CA /* UserSettingProtocol.swift */; };
+		07A196EE231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196ED231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift */; };
+		07A196F0231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196EF231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift */; };
+		07A40C9023165F1A000ADE14 /* AkPrayerTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A40C8F23165F1A000ADE14 /* AkPrayerTime.swift */; };
 		07C20AD5231523A40092E0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20AD4231523A40092E0D1 /* AppDelegate.swift */; };
 		07C20ADC231523A60092E0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C20ADB231523A60092E0D1 /* Assets.xcassets */; };
 		07C20ADF231523A60092E0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C20ADD231523A60092E0D1 /* LaunchScreen.storyboard */; };
@@ -16,6 +22,7 @@
 		07C20B09231538980092E0D1 /* HomeInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B08231538980092E0D1 /* HomeInteractorTest.swift */; };
 		07C20B0C231539260092E0D1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B0B231539260092E0D1 /* HomeInteractor.swift */; };
 		07C20B0F23153AA50092E0D1 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B0E23153AA50092E0D1 /* HomeProtocols.swift */; };
+		07F8D3B7231A52940065DF0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8D3B6231A52940065DF0F /* Constants.swift */; };
 		649C6913329B422EC7E0A30B /* Pods_Badesaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */; };
 		B20E68091A81F125ED3DE736 /* Pods_BadesabaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07A196E5231A369100DF00CA /* PrayerTimesUserSettingRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUserSettingRepositoryTest.swift; sourceTree = "<group>"; };
+		07A196E8231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUserSettingRepository.swift; sourceTree = "<group>"; };
+		07A196EB231A380600DF00CA /* UserSettingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingProtocol.swift; sourceTree = "<group>"; };
+		07A196ED231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUserSettingLocalServiceTest.swift; sourceTree = "<group>"; };
+		07A196EF231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUserSettingLocalService.swift; sourceTree = "<group>"; };
+		07A40C8F23165F1A000ADE14 /* AkPrayerTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkPrayerTime.swift; sourceTree = "<group>"; };
 		07C20AD1231523A40092E0D1 /* Badesaba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Badesaba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C20AD4231523A40092E0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C20ADB231523A60092E0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +59,7 @@
 		07C20B08231538980092E0D1 /* HomeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTest.swift; sourceTree = "<group>"; };
 		07C20B0B231539260092E0D1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		07C20B0E23153AA50092E0D1 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		07F8D3B6231A52940065DF0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BadesabaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Badesaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDADD04D72EE5DFDEDFF058 /* Pods-BadesabaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadesabaTests.release.xcconfig"; path = "Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +88,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07A196E3231A321400DF00CA /* UserSetting */ = {
+			isa = PBXGroup;
+			children = (
+				07A196E4231A321C00DF00CA /* Data */,
+			);
+			path = UserSetting;
+			sourceTree = "<group>";
+		};
+		07A196E4231A321C00DF00CA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				07A196E5231A369100DF00CA /* PrayerTimesUserSettingRepositoryTest.swift */,
+				07A196ED231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		07A196E7231A36E600DF00CA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				07A196E8231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift */,
+				07A196EF231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		07A196EA231A37EF00DF00CA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				07A196EB231A380600DF00CA /* UserSettingProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		07A40C92231A31C7000ADE14 /* UserSetting */ = {
+			isa = PBXGroup;
+			children = (
+				07A196EA231A37EF00DF00CA /* Protocol */,
+				07A196E7231A36E600DF00CA /* Data */,
+			);
+			path = UserSetting;
+			sourceTree = "<group>";
+		};
 		07C20AC8231523A40092E0D1 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +188,8 @@
 			children = (
 				07C20AFD231529C10092E0D1 /* Extensions */,
 				07C20B0123152BE40092E0D1 /* Strings.swift */,
+				07A40C8F23165F1A000ADE14 /* AkPrayerTime.swift */,
+				07F8D3B6231A52940065DF0F /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -146,6 +205,7 @@
 		07C20B032315382B0092E0D1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				07A40C92231A31C7000ADE14 /* UserSetting */,
 				07C20B04231538670092E0D1 /* Home */,
 			);
 			path = Modules;
@@ -163,6 +223,7 @@
 		07C20B05231538740092E0D1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				07A196E3231A321400DF00CA /* UserSetting */,
 				07C20B062315387B0092E0D1 /* Home */,
 			);
 			path = Modules;
@@ -416,8 +477,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C20AFF231529E40092E0D1 /* StringExtension.swift in Sources */,
+				07A196E9231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift in Sources */,
+				07A196F0231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift in Sources */,
 				07C20B0F23153AA50092E0D1 /* HomeProtocols.swift in Sources */,
+				07A196EC231A380600DF00CA /* UserSettingProtocol.swift in Sources */,
+				07F8D3B7231A52940065DF0F /* Constants.swift in Sources */,
 				07C20B0223152BE40092E0D1 /* Strings.swift in Sources */,
+				07A40C9023165F1A000ADE14 /* AkPrayerTime.swift in Sources */,
 				07C20AD5231523A40092E0D1 /* AppDelegate.swift in Sources */,
 				07C20B0C231539260092E0D1 /* HomeInteractor.swift in Sources */,
 			);
@@ -428,6 +494,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C20B09231538980092E0D1 /* HomeInteractorTest.swift in Sources */,
+				07A196EE231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift in Sources */,
+				07A196E6231A369100DF00CA /* PrayerTimesUserSettingRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
