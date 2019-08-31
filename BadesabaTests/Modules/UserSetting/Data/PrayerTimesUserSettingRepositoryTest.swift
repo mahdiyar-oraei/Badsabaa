@@ -49,8 +49,31 @@ class PrayerTimesUserSettingRepositoryTest : QuickSpec {
             }
         }
         
+        describe("Save lat, long setting") {
+            beforeEach {
+                self.sut.saveSetting(latLong:[1, 21])
+            }
+            
+            it("Should tell local service to save this setting") {
+                expect(self.localServiceMock.isSaveSelectedLatLong)
+                    .to(beTrue())
+            }
+        }
+        
+        describe("Save algorithm setting") {
+            beforeEach {
+                self.sut.saveSetting(algorithm: AKPrayerTime.CalculationMethod.ISNA.rawValue)
+            }
+            
+            it("Should tell local service to save this setting") {
+                expect(self.localServiceMock.isSaveSelectedAlgorithm)
+                    .to(beTrue())
+            }
+        }
+        
         afterSuite {
             self.sut = nil
+            self.localServiceMock = nil
         }
     }
 }
@@ -60,13 +83,15 @@ fileprivate class LocalServiceMock: IPrayerTimesUserSettingLocalService {
     
     var isGetSelectedLatLong = false
     var isGetSelectedAlgoritm = false
+    var isSaveSelectedAlgorithm = false
+    var isSaveSelectedLatLong = false
     
     func saveSelectedAlgorithm(_ algorithm: AKPrayerTime.CalculationMethod) {
-        
+        isSaveSelectedAlgorithm = true
     }
     
     func saveSelectedLatLong(latLong: [Double]) {
-        
+        isSaveSelectedLatLong = true
     }
     
     func getSelectedLatLong() throws -> [Double] {
@@ -84,8 +109,8 @@ fileprivate class LocalServiceMock: IPrayerTimesUserSettingLocalService {
         
         return ""
     }
-    
-    enum FakeError: Error {
-        case fake
-    }
+}
+
+enum FakeError: Error {
+    case fake
 }

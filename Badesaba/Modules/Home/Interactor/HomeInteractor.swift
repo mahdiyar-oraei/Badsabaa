@@ -9,6 +9,8 @@ import Foundation
 
 
 class HomeInteractor {
+    weak var output: HomeInteractorOutput?
+    var prayerTimesUserSettingRepository: PrayerTimesDataProvider!
     // Save requested days of months in formatt of [offset : timestamp] since get occasions of them
     var monthsDaysDictionary: [Int : [TimeInterval : Bool]] = [:]
     
@@ -59,5 +61,24 @@ extension HomeInteractor: LoadMonthUseCase {
         }
         
         monthsDaysDictionary[monthOffset] = daysTimestamp
+    }
+}
+
+extension HomeInteractor: SelectADayUseCase {
+    func selectDay(timestamp: Double) {
+        do {
+            let selectedDay = Date(timeIntervalSince1970: timestamp)
+            let selectedSetting = try prayerTimesUserSettingRepository.getUserSelectedSetting()
+            
+            let prayerTime = AKPrayerTime(lat: selectedSetting.latLong[0], lng: selectedSetting.latLong[1])
+            prayerTime.calculationMethod = AKPrayerTime.CalculationMethod(rawValue: selectedSetting.algorithm)!
+            prayerTime.calcDate = selectedDay
+            
+            let prayerTimes = prayerTime.getPrayerTimes()
+            
+            self.output?.prayerTimesForSelectedDay(prayerTimes: prayerTimes!)
+        } catch {
+            self.output?.couldNotFindAnySelectedLatLong()
+        }
     }
 }

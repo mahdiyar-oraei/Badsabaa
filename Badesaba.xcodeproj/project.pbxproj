@@ -23,6 +23,7 @@
 		07C20B0C231539260092E0D1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B0B231539260092E0D1 /* HomeInteractor.swift */; };
 		07C20B0F23153AA50092E0D1 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20B0E23153AA50092E0D1 /* HomeProtocols.swift */; };
 		07F8D3B7231A52940065DF0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8D3B6231A52940065DF0F /* Constants.swift */; };
+		07F8D3BA231A86940065DF0F /* PrayerTimesSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8D3B9231A86940065DF0F /* PrayerTimesSetting.swift */; };
 		649C6913329B422EC7E0A30B /* Pods_Badesaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */; };
 		B20E68091A81F125ED3DE736 /* Pods_BadesabaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,8 +59,9 @@
 		07C20B0123152BE40092E0D1 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		07C20B08231538980092E0D1 /* HomeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTest.swift; sourceTree = "<group>"; };
 		07C20B0B231539260092E0D1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		07C20B0E23153AA50092E0D1 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		07C20B0E23153AA50092E0D1 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		07F8D3B6231A52940065DF0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07F8D3B9231A86940065DF0F /* PrayerTimesSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesSetting.swift; sourceTree = "<group>"; };
 		48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BadesabaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Badesaba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDADD04D72EE5DFDEDFF058 /* Pods-BadesabaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadesabaTests.release.xcconfig"; path = "Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		07C20B102315417E0092E0D1 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				07F8D3B9231A86940065DF0F /* PrayerTimesSetting.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C20AFF231529E40092E0D1 /* StringExtension.swift in Sources */,
+				07F8D3BA231A86940065DF0F /* PrayerTimesSetting.swift in Sources */,
 				07A196E9231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift in Sources */,
 				07A196F0231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift in Sources */,
 				07C20B0F23153AA50092E0D1 /* HomeProtocols.swift in Sources */,

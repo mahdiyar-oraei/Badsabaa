@@ -6,6 +6,8 @@
 //  Copyright © 2019 Moj Hamrah. All rights reserved.
 //
 
-protocol PrayerTimesDataProvider {
-    func getUserSelectedSetting() throws
+protocol PrayerTimesDataProvider: class {
+    func getUserSelectedSetting() throws -> PrayerTimesSetting
+    func saveSetting(latLong: [Double])
+    func saveSetting(algorithm: String)
 }

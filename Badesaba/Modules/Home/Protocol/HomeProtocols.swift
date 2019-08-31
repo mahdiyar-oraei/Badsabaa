@@ -10,3 +10,13 @@ protocol LoadMonthUseCase: class {
     func loadMonths(_ monthOffsets: [Int])
     func loadMonth(_ monthOffset: Int)
 }
+
+protocol SelectADayUseCase {
+    func selectDay(timestamp: Double)
+}
+
+protocol HomeInteractorOutput: class {
+    func couldNotFindAnySelectedLatLong()
+    func prayerTimesForSelectedDay(prayerTimes: [AKPrayerTime.TimeNames : Any])
+}
+

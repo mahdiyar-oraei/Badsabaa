@@ -13,10 +13,17 @@ import Nimble
 class HomeInteractorTest: QuickSpec {
     
     private var sut: HomeInteractor!
+    private var mockRepository: PrayerTimesUserSettingRepositoryMock!
+    private var mockInteractorOutput: InteractorOutputMock!
     
     override func spec() {
         beforeSuite {
+            self.mockRepository = PrayerTimesUserSettingRepositoryMock()
+            self.mockInteractorOutput = InteractorOutputMock()
             self.sut = HomeInteractor()
+            
+            self.sut.prayerTimesUserSettingRepository = self.mockRepository
+            self.sut.output = self.mockInteractorOutput
         }
         
         describe("Load month(s) use case") {
@@ -84,8 +91,96 @@ class HomeInteractorTest: QuickSpec {
             }
         }
         
+        describe("Select a day in calendar") {
+            context("When user selected a lat, long") {
+                var expectedPrayerTimes: [AKPrayerTime.TimeNames : Any]!
+                beforeEach {
+                    let today = Calendar(identifier: .persian).startOfDay(for: Date())
+
+                    let selectedSetting = try! self.mockRepository.getUserSelectedSetting()
+                    let prayerTime = AKPrayerTime(lat: selectedSetting.latLong[0], lng: selectedSetting.latLong[1])
+                    prayerTime.calculationMethod = AKPrayerTime.CalculationMethod(rawValue: selectedSetting.algorithm)!
+                    prayerTime.calcDate = today
+                    
+                    expectedPrayerTimes = prayerTime.getPrayerTimes()
+                    self.mockInteractorOutput.expectedPrayerTimes = expectedPrayerTimes
+                    
+                    self.sut.selectDay(timestamp: today.timeIntervalSince1970)
+                }
+                
+                it("Should get user setting from user defaults") {
+                    expect(self.mockRepository.isGetUserSelectedSetting)
+                        .to(beTrue())
+                }
+                
+                it("Should send computed prayer times to presenter") {
+                    expect(self.mockInteractorOutput.isPrayerTimesForSelectedDayCalled)
+                        .to(beTrue())
+                }
+            }
+            
+            context("When user didn't select any lat, long") {
+                beforeEach {
+                    self.mockRepository.isShouldThrowError = true
+                    let today = Calendar(identifier: .persian).startOfDay(for: Date())
+                    
+                    self.sut.selectDay(timestamp: today.timeIntervalSince1970)
+                }
+                
+                it("Should tell presenter that couldn't find any selected lat, long") {
+                    expect(self.mockInteractorOutput.isCouldNotFindAnySelectedLatLongCalled)
+                        .to(beTrue())
+                }
+            }
+        }
+        
         afterSuite {
             self.sut = nil
+            self.mockRepository = nil
+            self.mockInteractorOutput = nil
+        }
+    }
+}
+
+fileprivate class PrayerTimesUserSettingRepositoryMock: PrayerTimesDataProvider {
+    var isShouldThrowError = false
+    var isGetUserSelectedSetting = false
+    
+    func getUserSelectedSetting() throws -> PrayerTimesSetting {
+        if isShouldThrowError {
+            throw FakeError.fake
+        }
+        
+        isGetUserSelectedSetting = true
+        
+        return PrayerTimesSetting(latLong: [1, 21], algorithm: "ISNA")
+    }
+    
+    func saveSetting(latLong: [Double]) {
+        
+    }
+    
+    func saveSetting(algorithm: String) {
+        
+    }
+}
+
+fileprivate class InteractorOutputMock: HomeInteractorOutput {
+    var isCouldNotFindAnySelectedLatLongCalled = false
+    var isPrayerTimesForSelectedDayCalled = false
+    
+    var expectedPrayerTimes: [AKPrayerTime.TimeNames : Any]!
+    
+    func couldNotFindAnySelectedLatLong() {
+        isCouldNotFindAnySelectedLatLongCalled = true
+    }
+    
+    func prayerTimesForSelectedDay(prayerTimes: [AKPrayerTime.TimeNames : Any]) {
+        isPrayerTimesForSelectedDayCalled = false
+        prayerTimes.forEach { (prayTime) in
+            isPrayerTimesForSelectedDayCalled = expectedPrayerTimes.filter({ (expectedPrayTime) -> Bool in
+                expectedPrayTime.key == prayTime.key
+            }).first?.value as! String == prayTime.value as! String
         }
     }
 }
