@@ -7,14 +7,14 @@
 //
 import Foundation
 
-protocol IPrayerTimesUserSettingLocalService {
+protocol PrayerTimesUserSettingLocalService {
     func getSelectedLatLong() throws -> [Double]
     func getSelectedAlgorithm() -> String
     func saveSelectedLatLong(latLong: [Double])
     func saveSelectedAlgorithm(_ algorithm: AKPrayerTime.CalculationMethod)
 }
 
-class PrayerTimesUserSettingLocalService: IPrayerTimesUserSettingLocalService {
+class IPrayerTimesUserSettingLocalService: PrayerTimesUserSettingLocalService {
     func saveSelectedAlgorithm(_ algorithm: AKPrayerTime.CalculationMethod) {
         UserDefaults.standard.set(algorithm.rawValue, forKey: Constants.UserDefaults.userSelectedAlgorithm)
     }
@@ -35,7 +35,7 @@ class PrayerTimesUserSettingLocalService: IPrayerTimesUserSettingLocalService {
     }
 }
 
-extension PrayerTimesUserSettingLocalService {
+extension IPrayerTimesUserSettingLocalService {
     enum Error: Swift.Error, Equatable {
         case didNotSelectLatLongEver
     }

@@ -11,3 +11,11 @@ protocol PrayerTimesDataProvider: class {
     func saveSetting(latLong: [Double])
     func saveSetting(algorithm: String)
 }
+
+protocol LocationDataProvider {
+    func getSelectedCitiesHistory() throws -> [CityModel]
+}
+
+protocol GetSelectedCitiesHistoryUseCase: class {
+    
+}

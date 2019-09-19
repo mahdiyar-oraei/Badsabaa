@@ -10,11 +10,11 @@ import Quick
 import Nimble
 
 class PrayerTimesUserSettingLocalServiceTest: QuickSpec {
-    private var sut: PrayerTimesUserSettingLocalService!
+    private var sut: IPrayerTimesUserSettingLocalService!
     
     override func spec() {
         beforeSuite {
-            self.sut = PrayerTimesUserSettingLocalService()
+            self.sut = IPrayerTimesUserSettingLocalService()
         }
         
         describe("Save selected lat, long") {

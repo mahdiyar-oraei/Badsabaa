@@ -7,7 +7,7 @@
 //
 
 class PrayerTimesUserSettingRepository: PrayerTimesDataProvider {
-    var localService: IPrayerTimesUserSettingLocalService!
+    var localService: PrayerTimesUserSettingLocalService!
     
     func saveSetting(algorithm: String) {
         localService.saveSelectedAlgorithm(AKPrayerTime.CalculationMethod(rawValue: algorithm)!)

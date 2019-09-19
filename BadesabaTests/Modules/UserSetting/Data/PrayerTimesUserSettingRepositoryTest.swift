@@ -78,7 +78,7 @@ class PrayerTimesUserSettingRepositoryTest : QuickSpec {
     }
 }
 
-fileprivate class LocalServiceMock: IPrayerTimesUserSettingLocalService {
+fileprivate class LocalServiceMock: PrayerTimesUserSettingLocalService {
     var throwError = false
     
     var isGetSelectedLatLong = false

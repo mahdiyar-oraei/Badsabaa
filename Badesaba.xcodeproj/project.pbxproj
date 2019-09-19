@@ -11,7 +11,7 @@
 		07A196E9231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196E8231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift */; };
 		07A196EC231A380600DF00CA /* UserSettingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196EB231A380600DF00CA /* UserSettingProtocol.swift */; };
 		07A196EE231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196ED231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift */; };
-		07A196F0231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196EF231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift */; };
+		07A196F0231A396B00DF00CA /* IPrayerTimesUserSettingLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A196EF231A396B00DF00CA /* IPrayerTimesUserSettingLocalService.swift */; };
 		07A40C9023165F1A000ADE14 /* AkPrayerTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A40C8F23165F1A000ADE14 /* AkPrayerTime.swift */; };
 		07C20AD5231523A40092E0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20AD4231523A40092E0D1 /* AppDelegate.swift */; };
 		07C20ADC231523A60092E0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C20ADB231523A60092E0D1 /* Assets.xcassets */; };
@@ -26,6 +26,15 @@
 		07F8D3BA231A86940065DF0F /* PrayerTimesSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8D3B9231A86940065DF0F /* PrayerTimesSetting.swift */; };
 		649C6913329B422EC7E0A30B /* Pods_Badesaba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB37012E11B026153D2F322 /* Pods_Badesaba.framework */; };
 		B20E68091A81F125ED3DE736 /* Pods_BadesabaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */; };
+		E26300BC23334449000D501E /* BadesabaDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E26300BA23334449000D501E /* BadesabaDataModel.xcdatamodeld */; };
+		E26300BE23336867000D501E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300BD23336867000D501E /* CoreDataStack.swift */; };
+		E26300C023336DDF000D501E /* UserSettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300BF23336DDF000D501E /* UserSettingInteractor.swift */; };
+		E26300C423336EAE000D501E /* UserSettingInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300C323336EAE000D501E /* UserSettingInteractorTest.swift */; };
+		E26300C623336FFC000D501E /* LocationUserSettingRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300C523336FFC000D501E /* LocationUserSettingRepositoryTest.swift */; };
+		E26300C82333704E000D501E /* LocationUserSettingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300C72333704E000D501E /* LocationUserSettingRepository.swift */; };
+		E26300CA23337126000D501E /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300C923337126000D501E /* CityModel.swift */; };
+		E26300CC2333735E000D501E /* ILocationUserSettingLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300CB2333735E000D501E /* ILocationUserSettingLocalService.swift */; };
+		E26300CF23337876000D501E /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300CE23337876000D501E /* GeneralError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +52,7 @@
 		07A196E8231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUserSettingRepository.swift; sourceTree = "<group>"; };
 		07A196EB231A380600DF00CA /* UserSettingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingProtocol.swift; sourceTree = "<group>"; };
 		07A196ED231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUserSettingLocalServiceTest.swift; sourceTree = "<group>"; };
-		07A196EF231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesUserSettingLocalService.swift; sourceTree = "<group>"; };
+		07A196EF231A396B00DF00CA /* IPrayerTimesUserSettingLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrayerTimesUserSettingLocalService.swift; sourceTree = "<group>"; };
 		07A40C8F23165F1A000ADE14 /* AkPrayerTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkPrayerTime.swift; sourceTree = "<group>"; };
 		07C20AD1231523A40092E0D1 /* Badesaba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Badesaba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C20AD4231523A40092E0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +76,15 @@
 		7DDADD04D72EE5DFDEDFF058 /* Pods-BadesabaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadesabaTests.release.xcconfig"; path = "Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests.release.xcconfig"; sourceTree = "<group>"; };
 		C0F8706DE2197191F61B4776 /* Pods-Badesaba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badesaba.release.xcconfig"; path = "Target Support Files/Pods-Badesaba/Pods-Badesaba.release.xcconfig"; sourceTree = "<group>"; };
 		D82959651B295803B6297969 /* Pods-BadesabaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadesabaTests.debug.xcconfig"; path = "Target Support Files/Pods-BadesabaTests/Pods-BadesabaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E26300BB23334449000D501E /* BadesabaDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BadesabaDataModel.xcdatamodel; sourceTree = "<group>"; };
+		E26300BD23336867000D501E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E26300BF23336DDF000D501E /* UserSettingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingInteractor.swift; sourceTree = "<group>"; };
+		E26300C323336EAE000D501E /* UserSettingInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingInteractorTest.swift; sourceTree = "<group>"; };
+		E26300C523336FFC000D501E /* LocationUserSettingRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUserSettingRepositoryTest.swift; sourceTree = "<group>"; };
+		E26300C72333704E000D501E /* LocationUserSettingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUserSettingRepository.swift; sourceTree = "<group>"; };
+		E26300C923337126000D501E /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		E26300CB2333735E000D501E /* ILocationUserSettingLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILocationUserSettingLocalService.swift; sourceTree = "<group>"; };
+		E26300CE23337876000D501E /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
 		F910117CA1FAF9EBB8BF53F4 /* Pods-Badesaba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badesaba.debug.xcconfig"; path = "Target Support Files/Pods-Badesaba/Pods-Badesaba.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +111,7 @@
 		07A196E3231A321400DF00CA /* UserSetting */ = {
 			isa = PBXGroup;
 			children = (
+				E26300C223336DF3000D501E /* Interactor */,
 				07A196E4231A321C00DF00CA /* Data */,
 			);
 			path = UserSetting;
@@ -103,6 +122,7 @@
 			children = (
 				07A196E5231A369100DF00CA /* PrayerTimesUserSettingRepositoryTest.swift */,
 				07A196ED231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift */,
+				E26300C523336FFC000D501E /* LocationUserSettingRepositoryTest.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -111,7 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				07A196E8231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift */,
-				07A196EF231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift */,
+				07A196EF231A396B00DF00CA /* IPrayerTimesUserSettingLocalService.swift */,
+				E26300C72333704E000D501E /* LocationUserSettingRepository.swift */,
+				E26300CB2333735E000D501E /* ILocationUserSettingLocalService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -127,6 +149,7 @@
 		07A40C92231A31C7000ADE14 /* UserSetting */ = {
 			isa = PBXGroup;
 			children = (
+				E26300C123336DE5000D501E /* Interactor */,
 				07A196EA231A37EF00DF00CA /* Protocol */,
 				07A196E7231A36E600DF00CA /* Data */,
 			);
@@ -156,11 +179,13 @@
 		07C20AD3231523A40092E0D1 /* Badesaba */ = {
 			isa = PBXGroup;
 			children = (
+				E26300CD23337807000D501E /* Error */,
 				07C20B102315417E0092E0D1 /* Entities */,
 				07C20B032315382B0092E0D1 /* Modules */,
 				07C20AFC231529B90092E0D1 /* Utils */,
 				07C20AF42315242C0092E0D1 /* Resources */,
 				07C20AD4231523A40092E0D1 /* AppDelegate.swift */,
+				E26300BD23336867000D501E /* CoreDataStack.swift */,
 			);
 			path = Badesaba;
 			sourceTree = "<group>";
@@ -181,6 +206,7 @@
 				07C20ADD231523A60092E0D1 /* LaunchScreen.storyboard */,
 				07C20AE0231523A60092E0D1 /* Info.plist */,
 				07C20AF8231529340092E0D1 /* Localized.strings */,
+				E26300BA23334449000D501E /* BadesabaDataModel.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -267,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				07F8D3B9231A86940065DF0F /* PrayerTimesSetting.swift */,
+				E26300C923337126000D501E /* CityModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -289,6 +316,30 @@
 				48A95F8A9865B985F1C4A380 /* Pods_BadesabaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E26300C123336DE5000D501E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E26300BF23336DDF000D501E /* UserSettingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E26300C223336DF3000D501E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E26300C323336EAE000D501E /* UserSettingInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E26300CD23337807000D501E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				E26300CE23337876000D501E /* GeneralError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,15 +532,22 @@
 			files = (
 				07C20AFF231529E40092E0D1 /* StringExtension.swift in Sources */,
 				07F8D3BA231A86940065DF0F /* PrayerTimesSetting.swift in Sources */,
+				E26300C82333704E000D501E /* LocationUserSettingRepository.swift in Sources */,
 				07A196E9231A36EF00DF00CA /* PrayerTimesUserSettingRepository.swift in Sources */,
-				07A196F0231A396B00DF00CA /* PrayerTimesUserSettingLocalService.swift in Sources */,
+				07A196F0231A396B00DF00CA /* IPrayerTimesUserSettingLocalService.swift in Sources */,
 				07C20B0F23153AA50092E0D1 /* HomeProtocols.swift in Sources */,
 				07A196EC231A380600DF00CA /* UserSettingProtocol.swift in Sources */,
+				E26300BE23336867000D501E /* CoreDataStack.swift in Sources */,
 				07F8D3B7231A52940065DF0F /* Constants.swift in Sources */,
+				E26300C023336DDF000D501E /* UserSettingInteractor.swift in Sources */,
 				07C20B0223152BE40092E0D1 /* Strings.swift in Sources */,
+				E26300BC23334449000D501E /* BadesabaDataModel.xcdatamodeld in Sources */,
 				07A40C9023165F1A000ADE14 /* AkPrayerTime.swift in Sources */,
+				E26300CC2333735E000D501E /* ILocationUserSettingLocalService.swift in Sources */,
 				07C20AD5231523A40092E0D1 /* AppDelegate.swift in Sources */,
+				E26300CA23337126000D501E /* CityModel.swift in Sources */,
 				07C20B0C231539260092E0D1 /* HomeInteractor.swift in Sources */,
+				E26300CF23337876000D501E /* GeneralError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +556,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C20B09231538980092E0D1 /* HomeInteractorTest.swift in Sources */,
+				E26300C623336FFC000D501E /* LocationUserSettingRepositoryTest.swift in Sources */,
 				07A196EE231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift in Sources */,
+				E26300C423336EAE000D501E /* UserSettingInteractorTest.swift in Sources */,
 				07A196E6231A369100DF00CA /* PrayerTimesUserSettingRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,6 +827,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E26300BA23334449000D501E /* BadesabaDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E26300BB23334449000D501E /* BadesabaDataModel.xcdatamodel */,
+			);
+			currentVersion = E26300BB23334449000D501E /* BadesabaDataModel.xcdatamodel */;
+			path = BadesabaDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 07C20AC9231523A40092E0D1 /* Project object */;
 }
