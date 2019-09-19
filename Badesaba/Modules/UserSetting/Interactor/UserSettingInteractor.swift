@@ -7,9 +7,16 @@
 //
 
 class UserSettingInteractor {
-    
+    var locationRepository: LocationDataProvider!
+    var output: UserSettingInteractorOutput!
 }
 
 extension UserSettingInteractor: GetSelectedCitiesHistoryUseCase {
-    
+    func getCities() {
+        do {
+            self.output.citiesDidLoad(try locationRepository.getSelectedCitiesHistory())
+        } catch {
+            self.output.citiesLoadFailed(error)
+        }
+    }
 }

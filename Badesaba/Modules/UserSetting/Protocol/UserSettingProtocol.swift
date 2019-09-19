@@ -17,5 +17,10 @@ protocol LocationDataProvider {
 }
 
 protocol GetSelectedCitiesHistoryUseCase: class {
-    
+    func getCities()
+}
+
+protocol UserSettingInteractorOutput {
+    func citiesDidLoad(_ models: [CityModel])
+    func citiesLoadFailed(_ error: Error)
 }
