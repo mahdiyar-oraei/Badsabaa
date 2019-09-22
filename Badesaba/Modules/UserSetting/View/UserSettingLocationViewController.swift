@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserSettingLocationViewController: UIViewController {
+class UserSettingLocationViewController: BaseViewController {
     var presenter: UserSettingLocationPresentation!
     
     override func viewDidLoad() {
@@ -20,8 +20,5 @@ class UserSettingLocationViewController: UIViewController {
 
 extension UserSettingLocationViewController : UserSettingLocationView {
     func showSelectedCitiesHistory(_ cities: [CityModel]) {
-    }
-    
-    func showErrorAlert(message: String) {
     }
 }

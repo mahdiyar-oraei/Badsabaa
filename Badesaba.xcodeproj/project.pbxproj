@@ -39,6 +39,8 @@
 		E26300D723339915000D501E /* UserSettingPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300D623339915000D501E /* UserSettingPresenterTest.swift */; };
 		E26300DA2333A3C5000D501E /* UserSettingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300D92333A3C5000D501E /* UserSettingLocationViewController.swift */; };
 		E263352E233760AA00324303 /* UserSettingLocationViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263352D233760AA00324303 /* UserSettingLocationViewControllerTest.swift */; };
+		E26335302337933900324303 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263352F2337933900324303 /* ThemeManager.swift */; };
+		E26335322337958300324303 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26335312337958300324303 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		E26300D623339915000D501E /* UserSettingPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingPresenterTest.swift; sourceTree = "<group>"; };
 		E26300D92333A3C5000D501E /* UserSettingLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingLocationViewController.swift; sourceTree = "<group>"; };
 		E263352D233760AA00324303 /* UserSettingLocationViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingLocationViewControllerTest.swift; sourceTree = "<group>"; };
+		E263352F2337933900324303 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		E26335312337958300324303 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F910117CA1FAF9EBB8BF53F4 /* Pods-Badesaba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badesaba.debug.xcconfig"; path = "Target Support Files/Pods-Badesaba/Pods-Badesaba.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +202,8 @@
 				07C20AF42315242C0092E0D1 /* Resources */,
 				07C20AD4231523A40092E0D1 /* AppDelegate.swift */,
 				E26300BD23336867000D501E /* CoreDataStack.swift */,
+				E263352F2337933900324303 /* ThemeManager.swift */,
+				E26335312337958300324303 /* BaseViewController.swift */,
 			);
 			path = Badesaba;
 			sourceTree = "<group>";
@@ -587,6 +593,7 @@
 				07C20B0223152BE40092E0D1 /* Strings.swift in Sources */,
 				E26300D523339362000D501E /* UserSettingPresenter.swift in Sources */,
 				E26300BC23334449000D501E /* BadesabaDataModel.xcdatamodeld in Sources */,
+				E26335322337958300324303 /* BaseViewController.swift in Sources */,
 				07A40C9023165F1A000ADE14 /* AkPrayerTime.swift in Sources */,
 				E26300CC2333735E000D501E /* ILocationUserSettingLocalService.swift in Sources */,
 				07C20AD5231523A40092E0D1 /* AppDelegate.swift in Sources */,
@@ -594,6 +601,7 @@
 				E26300DA2333A3C5000D501E /* UserSettingLocationViewController.swift in Sources */,
 				07C20B0C231539260092E0D1 /* HomeInteractor.swift in Sources */,
 				E26300CF23337876000D501E /* GeneralError.swift in Sources */,
+				E26335302337933900324303 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

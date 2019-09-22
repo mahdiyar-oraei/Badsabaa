@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        ThemeManager.applyTheme(theme: .light)
+        
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
         UINavigationBar.appearance().semanticContentAttribute = .forceRightToLeft
         
