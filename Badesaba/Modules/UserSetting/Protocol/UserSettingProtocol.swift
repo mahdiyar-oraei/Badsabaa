@@ -20,7 +20,16 @@ protocol GetSelectedCitiesHistoryUseCase: class {
     func getCities()
 }
 
-protocol UserSettingInteractorOutput {
+protocol UserSettingInteractorOutput: class {
     func citiesDidLoad(_ models: [CityModel])
     func citiesLoadFailed(_ error: Error)
+}
+
+protocol UserSettingLocationView: class {
+    func showSelectedCitiesHistory(_ cities: [CityModel])
+    func showErrorAlert(message: String)
+}
+
+protocol UserSettingLocationPresentation {
+    func viewDidLoad()
 }

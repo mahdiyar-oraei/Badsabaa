@@ -6,17 +6,19 @@
 //  Copyright © 2019 Moj Hamrah. All rights reserved.
 //
 
+typealias UserSettingInteractorType = GetSelectedCitiesHistoryUseCase
+
 class UserSettingInteractor {
     var locationRepository: LocationDataProvider!
-    var output: UserSettingInteractorOutput!
+    weak var output: UserSettingInteractorOutput?
 }
 
 extension UserSettingInteractor: GetSelectedCitiesHistoryUseCase {
     func getCities() {
         do {
-            self.output.citiesDidLoad(try locationRepository.getSelectedCitiesHistory())
+            self.output?.citiesDidLoad(try locationRepository.getSelectedCitiesHistory())
         } catch {
-            self.output.citiesLoadFailed(error)
+            self.output?.citiesLoadFailed(error)
         }
     }
 }

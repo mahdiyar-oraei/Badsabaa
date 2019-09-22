@@ -35,6 +35,10 @@
 		E26300CA23337126000D501E /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300C923337126000D501E /* CityModel.swift */; };
 		E26300CC2333735E000D501E /* ILocationUserSettingLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300CB2333735E000D501E /* ILocationUserSettingLocalService.swift */; };
 		E26300CF23337876000D501E /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300CE23337876000D501E /* GeneralError.swift */; };
+		E26300D523339362000D501E /* UserSettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300D423339362000D501E /* UserSettingPresenter.swift */; };
+		E26300D723339915000D501E /* UserSettingPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300D623339915000D501E /* UserSettingPresenterTest.swift */; };
+		E26300DA2333A3C5000D501E /* UserSettingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26300D92333A3C5000D501E /* UserSettingLocationViewController.swift */; };
+		E263352E233760AA00324303 /* UserSettingLocationViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263352D233760AA00324303 /* UserSettingLocationViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		E26300C923337126000D501E /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		E26300CB2333735E000D501E /* ILocationUserSettingLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILocationUserSettingLocalService.swift; sourceTree = "<group>"; };
 		E26300CE23337876000D501E /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
+		E26300D423339362000D501E /* UserSettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingPresenter.swift; sourceTree = "<group>"; };
+		E26300D623339915000D501E /* UserSettingPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingPresenterTest.swift; sourceTree = "<group>"; };
+		E26300D92333A3C5000D501E /* UserSettingLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingLocationViewController.swift; sourceTree = "<group>"; };
+		E263352D233760AA00324303 /* UserSettingLocationViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingLocationViewControllerTest.swift; sourceTree = "<group>"; };
 		F910117CA1FAF9EBB8BF53F4 /* Pods-Badesaba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badesaba.debug.xcconfig"; path = "Target Support Files/Pods-Badesaba/Pods-Badesaba.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +119,8 @@
 		07A196E3231A321400DF00CA /* UserSetting */ = {
 			isa = PBXGroup;
 			children = (
+				E263352C2337602F00324303 /* View */,
+				E26300D22333933F000D501E /* Presenter */,
 				E26300C223336DF3000D501E /* Interactor */,
 				07A196E4231A321C00DF00CA /* Data */,
 			);
@@ -149,6 +159,8 @@
 		07A40C92231A31C7000ADE14 /* UserSetting */ = {
 			isa = PBXGroup;
 			children = (
+				E26300D82333A382000D501E /* View */,
+				E26300D323339347000D501E /* Presenter */,
 				E26300C123336DE5000D501E /* Interactor */,
 				07A196EA231A37EF00DF00CA /* Protocol */,
 				07A196E7231A36E600DF00CA /* Data */,
@@ -340,6 +352,38 @@
 				E26300CE23337876000D501E /* GeneralError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		E26300D22333933F000D501E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E26300D623339915000D501E /* UserSettingPresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E26300D323339347000D501E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E26300D423339362000D501E /* UserSettingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E26300D82333A382000D501E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E26300D92333A3C5000D501E /* UserSettingLocationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E263352C2337602F00324303 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E263352D233760AA00324303 /* UserSettingLocationViewControllerTest.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,11 +585,13 @@
 				07F8D3B7231A52940065DF0F /* Constants.swift in Sources */,
 				E26300C023336DDF000D501E /* UserSettingInteractor.swift in Sources */,
 				07C20B0223152BE40092E0D1 /* Strings.swift in Sources */,
+				E26300D523339362000D501E /* UserSettingPresenter.swift in Sources */,
 				E26300BC23334449000D501E /* BadesabaDataModel.xcdatamodeld in Sources */,
 				07A40C9023165F1A000ADE14 /* AkPrayerTime.swift in Sources */,
 				E26300CC2333735E000D501E /* ILocationUserSettingLocalService.swift in Sources */,
 				07C20AD5231523A40092E0D1 /* AppDelegate.swift in Sources */,
 				E26300CA23337126000D501E /* CityModel.swift in Sources */,
+				E26300DA2333A3C5000D501E /* UserSettingLocationViewController.swift in Sources */,
 				07C20B0C231539260092E0D1 /* HomeInteractor.swift in Sources */,
 				E26300CF23337876000D501E /* GeneralError.swift in Sources */,
 			);
@@ -555,6 +601,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26300D723339915000D501E /* UserSettingPresenterTest.swift in Sources */,
+				E263352E233760AA00324303 /* UserSettingLocationViewControllerTest.swift in Sources */,
 				07C20B09231538980092E0D1 /* HomeInteractorTest.swift in Sources */,
 				E26300C623336FFC000D501E /* LocationUserSettingRepositoryTest.swift in Sources */,
 				07A196EE231A38F700DF00CA /* PrayerTimesUserSettingLocalServiceTest.swift in Sources */,
