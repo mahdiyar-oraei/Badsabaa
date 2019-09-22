@@ -75,9 +75,9 @@ enum Theme: Int {
     var secondaryColor: UIColor {
         switch self {
         case .light:
-            return UIColor().colorFromHexString("ffffff")
-        case .dark:
             return UIColor().colorFromHexString("000000")
+        case .dark:
+            return UIColor().colorFromHexString("ffffff")
         }
     }
     
@@ -89,12 +89,33 @@ enum Theme: Int {
             return UIColor().colorFromHexString("000000")
         }
     }
+    
     var subtitleTextColor: UIColor {
         switch self {
         case .light:
             return UIColor().colorFromHexString("ffffff")
         case .dark:
             return UIColor().colorFromHexString("000000")
+        }
+    }
+    
+    var font: UIFont {
+        return Font.shared.regular(size: 15)
+    }
+    
+    enum Font: String {
+        case IRANYekanMobile = "IRANYekanMobile"
+        
+        static let shared = Font(rawValue: UserDefaults.standard.string(forKey: "default_font") ?? Font.IRANYekanMobile.rawValue)!
+        
+        private static let defaultFont = UIFont()
+        
+        func regular(size: CGFloat) -> UIFont {
+            return UIFont(name: self.rawValue, size: size) ?? Theme.Font.defaultFont
+        }
+        
+        func bold(size: CGFloat) -> UIFont {
+            return UIFont(name: "\(self.rawValue)-Bold", size: size) ?? Theme.Font.defaultFont
         }
     }
 }
@@ -123,6 +144,12 @@ class ThemeManager {
         let sharedApplication = UIApplication.shared
         sharedApplication.delegate?.window??.tintColor = theme.mainColor
         
+        UILabel.appearance().font = theme.font
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([.font : Theme.Font.shared.bold(size: 17), .foregroundColor : theme.secondaryColor], for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([.font : Theme.Font.shared.bold(size: 15), .foregroundColor : theme.secondaryColor], for: .highlighted)
+        
+        UINavigationBar.appearance().titleTextAttributes = [.font : Theme.Font.shared.bold(size: 17)]
         UINavigationBar.appearance().barStyle = theme.barStyle
         UINavigationBar.appearance().setBackgroundImage(theme.navigationBackgroundImage, for: .default)
         UINavigationBar.appearance().backIndicatorImage = UIImage(named: "backArrow")

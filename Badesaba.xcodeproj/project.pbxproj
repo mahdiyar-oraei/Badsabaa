@@ -41,6 +41,8 @@
 		E263352E233760AA00324303 /* UserSettingLocationViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263352D233760AA00324303 /* UserSettingLocationViewControllerTest.swift */; };
 		E26335302337933900324303 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263352F2337933900324303 /* ThemeManager.swift */; };
 		E26335322337958300324303 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26335312337958300324303 /* BaseViewController.swift */; };
+		E2633536233799BF00324303 /* IRANYekanMobileRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2633534233799BE00324303 /* IRANYekanMobileRegular.ttf */; };
+		E2633537233799BF00324303 /* IRANYekanMobileBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2633535233799BF00324303 /* IRANYekanMobileBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		E263352D233760AA00324303 /* UserSettingLocationViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingLocationViewControllerTest.swift; sourceTree = "<group>"; };
 		E263352F2337933900324303 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		E26335312337958300324303 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E2633534233799BE00324303 /* IRANYekanMobileRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANYekanMobileRegular.ttf; sourceTree = "<group>"; };
+		E2633535233799BF00324303 /* IRANYekanMobileBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANYekanMobileBold.ttf; sourceTree = "<group>"; };
 		F910117CA1FAF9EBB8BF53F4 /* Pods-Badesaba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badesaba.debug.xcconfig"; path = "Target Support Files/Pods-Badesaba/Pods-Badesaba.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +224,7 @@
 		07C20AF42315242C0092E0D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E26335332337996700324303 /* Fonts */,
 				07C20ADB231523A60092E0D1 /* Assets.xcassets */,
 				07C20ADD231523A60092E0D1 /* LaunchScreen.storyboard */,
 				07C20AE0231523A60092E0D1 /* Info.plist */,
@@ -392,6 +397,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E26335332337996700324303 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E2633535233799BF00324303 /* IRANYekanMobileBold.ttf */,
+				E2633534233799BE00324303 /* IRANYekanMobileRegular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -481,6 +495,8 @@
 			files = (
 				07C20AFA231529340092E0D1 /* Localized.strings in Resources */,
 				07C20ADF231523A60092E0D1 /* LaunchScreen.storyboard in Resources */,
+				E2633537233799BF00324303 /* IRANYekanMobileBold.ttf in Resources */,
+				E2633536233799BF00324303 /* IRANYekanMobileRegular.ttf in Resources */,
 				07C20ADC231523A60092E0D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

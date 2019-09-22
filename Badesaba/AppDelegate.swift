@@ -26,8 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupModules()
         
+        let viewController = (container.resolve(UserSettingLocationView.self) as! UIViewController)
+        
         window = UIWindow()
-        window?.rootViewController = (container.resolve(UserSettingLocationView.self) as! UIViewController)
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
         window?.makeKeyAndVisible()
         
         return true

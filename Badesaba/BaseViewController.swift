@@ -15,8 +15,19 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = theme.backgroundColor
+        
+        addViews()
+        setupConstraints()
     }
     
     func showErrorAlert(message: String) {
+    }
+    
+    func addViews() {
+        
+    }
+    
+    func setupConstraints() {
+        
     }
 }
