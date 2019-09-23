@@ -43,6 +43,7 @@
 		E26335322337958300324303 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26335312337958300324303 /* BaseViewController.swift */; };
 		E2633536233799BF00324303 /* IRANYekanMobileRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2633534233799BE00324303 /* IRANYekanMobileRegular.ttf */; };
 		E2633537233799BF00324303 /* IRANYekanMobileBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2633535233799BF00324303 /* IRANYekanMobileBold.ttf */; };
+		E2B94A50233898010054E3B3 /* UserSettingAddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B94A4F233898010054E3B3 /* UserSettingAddCityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		E26335312337958300324303 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E2633534233799BE00324303 /* IRANYekanMobileRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANYekanMobileRegular.ttf; sourceTree = "<group>"; };
 		E2633535233799BF00324303 /* IRANYekanMobileBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANYekanMobileBold.ttf; sourceTree = "<group>"; };
+		E2B94A4F233898010054E3B3 /* UserSettingAddCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingAddCityViewController.swift; sourceTree = "<group>"; };
 		F910117CA1FAF9EBB8BF53F4 /* Pods-Badesaba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badesaba.debug.xcconfig"; path = "Target Support Files/Pods-Badesaba/Pods-Badesaba.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -385,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				E26300D92333A3C5000D501E /* UserSettingLocationViewController.swift */,
+				E2B94A4F233898010054E3B3 /* UserSettingAddCityViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				07A196F0231A396B00DF00CA /* IPrayerTimesUserSettingLocalService.swift in Sources */,
 				07C20B0F23153AA50092E0D1 /* HomeProtocols.swift in Sources */,
 				07A196EC231A380600DF00CA /* UserSettingProtocol.swift in Sources */,
+				E2B94A50233898010054E3B3 /* UserSettingAddCityViewController.swift in Sources */,
 				E26300BE23336867000D501E /* CoreDataStack.swift in Sources */,
 				07F8D3B7231A52940065DF0F /* Constants.swift in Sources */,
 				E26300C023336DDF000D501E /* UserSettingInteractor.swift in Sources */,

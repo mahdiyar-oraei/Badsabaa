@@ -32,4 +32,5 @@ protocol UserSettingLocationView: class {
 
 protocol UserSettingLocationPresentation {
     func viewDidLoad()
+    func onAddCityTapped()
 }

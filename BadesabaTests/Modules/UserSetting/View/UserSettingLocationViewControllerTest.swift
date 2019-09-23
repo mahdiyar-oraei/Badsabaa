@@ -34,6 +34,17 @@ class UserSettingLocationViewControllerTest: QuickSpec {
             }
         }
         
+        describe("On add city tapped") {
+            beforeEach {
+                self.sut.onAddTapped()
+            }
+            
+            it("Should tell presenter that add city tapped") {
+                expect(self.presenter.isOnAddCityTappedCalled)
+                    .to(beTrue())
+            }
+        }
+        
         afterSuite {
             self.sut = nil
         }
@@ -42,6 +53,11 @@ class UserSettingLocationViewControllerTest: QuickSpec {
 
 fileprivate class PresenterMock: UserSettingLocationPresentation {
     var isViewDidLoad = false
+    var isOnAddCityTappedCalled = false
+    
+    func onAddCityTapped() {
+        self.isOnAddCityTappedCalled = true
+    }
     
     func viewDidLoad() {
         self.isViewDidLoad = true

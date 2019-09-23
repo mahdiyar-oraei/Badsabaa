@@ -12,7 +12,7 @@ import SnapKit
 class UserSettingLocationViewController: BaseViewController {
     var presenter: UserSettingLocationPresentation!
     
-    override var title: String? { get { return Strings.selectCity } set {} }
+    override var title: String? { get { return Strings.myCities } set {} }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class UserSettingLocationViewController: BaseViewController {
     }
     
     @objc func onAddTapped() {
-        
+        presenter.onAddCityTapped()
     }
     
     override func addViews() {

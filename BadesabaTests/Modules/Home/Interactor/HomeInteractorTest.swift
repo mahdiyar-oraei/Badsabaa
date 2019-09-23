@@ -59,7 +59,7 @@ class HomeInteractorTest: QuickSpec {
                     let daysInMonths = calendar.dateComponents([.day], from: startOfOffsetedMonthDate, to: endOfOffsetedMonthDate).day!
                     
                     expect(self.sut.monthsDaysDictionary[monthOffset]!.count)
-                        .to(equal(abs(daysInMonths)), description: "Month offset: \(monthOffset), expect did \(abs(daysInMonths)) but is \(self.sut.monthsDaysDictionary[monthOffset]!.count)")
+                        .to(equal(abs(daysInMonths)), description: "Month offset: \(monthOffset), did expect \(abs(daysInMonths)) but is \(self.sut.monthsDaysDictionary[monthOffset]!.count)")
                 })
             }
             

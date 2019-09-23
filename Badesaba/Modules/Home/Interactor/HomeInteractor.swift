@@ -49,7 +49,11 @@ extension HomeInteractor: LoadMonthUseCase {
         let islamicCalendar = Calendar(identifier: .islamic)
         
         var daysTimestamp: [TimeInterval : Bool] = [:]
-        for timestamp in stride(from: startOfOffsetedMonthDate.timeIntervalSince1970, through: endOfOffsetedMonthDate.timeIntervalSince1970, by: (24 * 60 * 60)) {
+        
+        let distanceInDays = persianCalendar.dateComponents([.day], from: startOfOffsetedMonthDate, to: endOfOffsetedMonthDate).day!
+        
+        for i in 0...Int(distanceInDays) {
+            let timestamp = startOfOffsetedMonthDate.timeIntervalSince1970 + Double(i * (24 * 60 * 60))
             
             let persianDateComponents = persianCalendar.dateComponents([.month, .day], from: Date(timeIntervalSince1970: timestamp))
             let persianMonthAndDay = [persianDateComponents.month! : persianDateComponents.day!]

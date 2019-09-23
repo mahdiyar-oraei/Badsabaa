@@ -23,6 +23,10 @@ extension UserSettingPresenter: UserSettingInteractorOutput {
 }
 
 extension UserSettingPresenter: UserSettingLocationPresentation {
+    func onAddCityTapped() {
+        
+    }
+    
     func viewDidLoad() {
         self.interactor.getCities()
     }

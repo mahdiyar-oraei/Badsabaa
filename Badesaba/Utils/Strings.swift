@@ -8,5 +8,6 @@
 
 enum Strings {
     static let selectCity = "selectCity".localized()
+    static let myCities = "myCities".localized()
     static let add = "add".localized()
 }
